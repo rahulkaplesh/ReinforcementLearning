@@ -5,3 +5,5 @@ Taxi-v2/__pycache__/
 Taxi-v3/.ipynb_checkpoints/
 Taxi-v3/__pycache__/
 MountainCar/.ipynb_checkpoints/
+DEEPRL_Docker/dqn/__pycache__/dqn_agent.cpython-36.pyc
+DEEPRL_Docker/dqn/__pycache__/
