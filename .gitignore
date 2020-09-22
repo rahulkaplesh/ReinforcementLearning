@@ -7,3 +7,10 @@ Taxi-v3/__pycache__/
 MountainCar/.ipynb_checkpoints/
 DEEPRL_Docker/dqn/__pycache__/dqn_agent.cpython-36.pyc
 DEEPRL_Docker/dqn/__pycache__/
+p1-navigation/__pycache__/agent.cpython-36.pyc
+p1-navigation/__pycache__/
+p1-navigation/DoubleDQN/__pycache__/
+p1-navigation/DoubleDQN_moreFCLayers/__pycache__/
+p1-navigation/DoubleDQN4LayersExpReplay/__pycache__/
+p1-navigation/DQN_RNN_PixelState/__pycache__/
+p1-navigation/Dueling_NN_DQN/__pycache__/
