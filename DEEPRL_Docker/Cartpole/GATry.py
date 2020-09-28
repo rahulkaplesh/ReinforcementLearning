@@ -13,6 +13,10 @@ import gym
 from agent import Agent
 
 import torch
+import time
+import sys
+
+sys.stdout = open('Cartpole/output.txt','wt')
 
 from deap import algorithms
 
@@ -24,7 +28,7 @@ gamma = 1
 max_t = 1000
 elite_frac = 0.2
 n_elite = int(elite_frac * pop_size)
-n_generations = 20
+n_generations = 40
 CXPB = 0.2
 MUTPB = 0.5
 
@@ -82,6 +86,8 @@ def mutate(individual):
 toolbox.register("mutate", mutate)
 toolbox.register("select",tools.selBest,k = n_elite)
 
+tic = time.perf_counter()
+
 pop = toolbox.population(n = pop_size)
 
 invalid_ind = [ind for ind in pop if not ind.fitness.valid]
@@ -127,10 +133,11 @@ for gen in range(1, n_generations):
     record = stats.compile(pop)
     logbook.record(gen=gen, evals=len(pop), **record)
     print(logbook.stream)
-    if record["avg"]>=90.0:
-        print('\nEnvironment solved in {:d} generations!'.format(gen))
+    if record["avg"]>=400.0:
+        print('Environment solved in {:d} generations!'.format(gen))
         agent.evaluate(pop[0], gamma=1.0)
         torch.save(agent.state_dict(), 'checkpointCartPole.pth')
         break
 
-
+toc = time.perf_counter()
+print("Environment solved in {:.4f} seconds".format(toc - tic))

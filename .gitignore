@@ -15,3 +15,5 @@ p1-navigation/DoubleDQN4LayersExpReplay/__pycache__/
 p1-navigation/DQN_RNN_PixelState/__pycache__/
 p1-navigation/Dueling_NN_DQN/__pycache__/
 DEEPRL_Docker/Cartpole/__pycache__/
+DEEPRL_Docker/Cartpole/untrainedCartPoleAgent.gif
+DEEPRL_Docker/Cartpole/gym_animation.gif
