@@ -59,8 +59,11 @@ toolbox.register("individual", tools.initIterate, creator.Individual, toolbox.at
 toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 
 def evaluation(individual):
-    reward = agent.evaluate(individual, gamma, max_t)
-    return reward,
+    mean_reward = []
+    for i in range(100):
+        reward = agent.evaluate(individual, gamma, max_t)
+        mean_reward.append(reward)
+    return np.mean(reward),
 
 toolbox.register("evaluate", evaluation)
 
