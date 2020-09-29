@@ -17,3 +17,4 @@ p1-navigation/Dueling_NN_DQN/__pycache__/
 DEEPRL_Docker/Cartpole/__pycache__/
 DEEPRL_Docker/Cartpole/untrainedCartPoleAgent.gif
 DEEPRL_Docker/Cartpole/gym_animation.gif
+DEEPRL_Docker/CartPole-PolicyGradient/__pycache__/
