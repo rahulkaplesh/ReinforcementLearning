@@ -42,7 +42,7 @@ class Agent(nn.Module):
 
     def forward(self, x):
         x = F.relu(self.fc1(x))
-        x = self.fc2(x)
+        x = F.softmax(self.fc2(x), dim=0)
         return x.cpu().data
 
     def evaluate(self, weights, gamma=1.0, max_t = 5000):
