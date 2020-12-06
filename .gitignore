@@ -18,3 +18,6 @@ DEEPRL_Docker/Cartpole/__pycache__/
 DEEPRL_Docker/Cartpole/untrainedCartPoleAgent.gif
 DEEPRL_Docker/Cartpole/gym_animation.gif
 DEEPRL_Docker/CartPole-PolicyGradient/__pycache__/
+DEEPRL_Docker/pingpong/
+p2-continuous_control/__pycache__/
+p2-continuous_control/Reacher_Windows_x86_64/
