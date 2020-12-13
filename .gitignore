@@ -21,3 +21,9 @@ DEEPRL_Docker/CartPole-PolicyGradient/__pycache__/
 DEEPRL_Docker/pingpong/
 p2-continuous_control/__pycache__/
 p2-continuous_control/Reacher_Windows_x86_64/
+MADDPG/__pycache__/
+MADDPG/baselines/
+MADDPG/log/
+MADDPG/multiagent/__pycache__/
+MADDPG/multiagent/scenarios/__pycache__/__init__.cpython-36.pyc
+MADDPG/multiagent/scenarios/__pycache__/
